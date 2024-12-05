@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 via-white to-gray-200 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-8 bg-white rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">
+            Bienvenido al portal de la <span class="text-green-800">Universidad Tecnológica del Valle de Toluca</span>
+        </h1>
+        <p class="text-gray-600 mb-6">Este es un portal donde se proporcionan varias APIs relacionadas con la institución.</p>
+
+        <!-- Botones principales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Botón Transporte -->
+            <a href="/cuervobus" class="flex items-center justify-center p-6 bg-green-700 text-white rounded-lg shadow-lg hover:bg-green-800 transition">
+                <i class="bi bi-bus-front-fill text-3xl mr-4"></i>
+                <span class="text-xl font-semibold">Transporte</span>
+            </a>
+            <!-- Botón Inicio de Sesión -->
+            <a href="/huella" class="flex items-center justify-center p-6 bg-green-700 text-white rounded-lg shadow-lg hover:bg-green-800 transition">
+                <i class="bi bi-fingerprint text-3xl mr-4"></i>
+                <span class="text-xl font-semibold">Iniciar Sesión</span>
+            </a>
+            <!-- Botón Descargar App -->
+            <a href="/descargar-apk" class="flex items-center justify-center p-6 bg-red-700 text-white rounded-lg shadow-lg hover:bg-red-800 transition">
+                <i class="bi bi-google-play text-3xl mr-4"></i>
+                <span class="text-xl font-semibold">Descargar App</span>
+            </a>
+            <!-- Botón Credenciales -->
+            <a href="http://www.accesotec.com.mx" target="_blank" class="flex items-center justify-center p-6 bg-red-700 text-white rounded-lg shadow-lg hover:bg-red-800 transition">
+                <i class="bi bi-person-vcard text-3xl mr-4"></i>
+                <span class="text-xl font-semibold">Credenciales</span>
+            </a>
+        </div>
+
+        <!-- Botones secundarios -->
+        <div>
+            <a href="https://utvt.edomex.gob.mx/" target="_blank" class="inline-block px-8 py-3 bg-green-700 text-white rounded-lg shadow-md hover:bg-green-800 transition">
+                <i class="bi bi-house mr-2"></i> Visitar el Sitio Web
+            </a>
+            <a href="/api-docs" class="inline-block px-8 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900 transition">
+                <i class="bi bi-braces-asterisk mr-2"></i> Ver Swagger
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
